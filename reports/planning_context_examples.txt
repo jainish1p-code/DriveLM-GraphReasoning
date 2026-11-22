@@ -1,0 +1,69 @@
+
+=== brake ===
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route13_Rep0/0010.json
+Node: 6:0 cluster=6 layer=0
+Question: Does the ego vehicle need to brake? Why?
+Answer: The ego vehicle should adjust its speed to the speed of the black car that is to the front of it.
+con_up: []
+con_down: [[1, 1], [2, 2], [3, 5], [3, 6], [3, 7], [3, 8], [4, 3], [5, 0]]
+Parent context: 8 nodes; tasks={'planning': 3, 'perception': 4, 'prediction': 1}; all graph neighbors=8
+  [1] 1:1 direction= task=planning layer=1
+      Q: What should the ego vehicle do based on the stop sign?
+      A: There is no stop sign affecting the ego vehicle.
+  [2] 2:2 direction= task=planning layer=2
+      Q: What should the ego vehicle do based on the traffic light?
+      A: There is no traffic light affecting the ego vehicle.
+  [3] 3:5 direction= task=perception layer=4
+      Q: What lane marking is on the right side of the ego car?
+      A: The lane marking on the right side of the ego car is a white solid lane.
+  [4] 3:6 direction= task=perception layer=9
+      Q: Is there an obstacle on the current road?
+      A: No, there is no obstacle on the current route.
+  [5] 3:7 direction= task=perception layer=7
+      Q: What is the current speed limit?
+      A: The current speed limit is 100 km/h.
+  [6] 3:8 direction= task=prediction layer=1
+      Q: The ego vehicle wants to follow the road. Which lanes are important to watch out for?
+      A: The ego vehicle should watch out for traffic coming from the oncoming lane.
+  [7] 4:3 direction= task=planning layer=3
+      Q: The ego vehicle follows the road. Is the black car that is to the front of the ego vehicle potentially crossing the path of the ego vehicle?
+      A: Yes, the black car is right to the front of the ego vehicle, so the ego vehicle should pay attention to not crash into it.
+  [8] 5:0 direction= task=perception layer=0
+      Q: How many pedestrians are there?
+      A: There are no pedestrians.
+
+=== traffic_light ===
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route13_Rep0/0010.json
+Node: 2:2 cluster=2 layer=2
+Question: What should the ego vehicle do based on the traffic light?
+Answer: There is no traffic light affecting the ego vehicle.
+con_up: [[6, 0]]
+con_down: [[2, 1]]
+Parent context: 1 nodes; tasks={'prediction': 1}; all graph neighbors=2
+  [1] 2:1 direction= task=prediction layer=1
+      Q: What is the state of the traffic light?
+      A: There is no traffic light affecting the ego vehicle.
+
+=== stop_sign ===
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route13_Rep0/0010.json
+Node: 1:1 cluster=1 layer=1
+Question: What should the ego vehicle do based on the stop sign?
+Answer: There is no stop sign affecting the ego vehicle.
+con_up: [[6, 0]]
+con_down: [[1, 0]]
+Parent context: 1 nodes; tasks={'prediction': 1}; all graph neighbors=2
+  [1] 1:0 direction= task=prediction layer=0
+      Q: Is the ego vehicle affected by a stop sign?
+      A: No, the ego vehicle is not affected by a stop sign.
+
+=== lane_or_center ===
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route13_Rep0/0010.json
+Node: 3:11 cluster=3 layer=8
+Question: Does the ego vehicle need to change lanes or deviate from the lane center due to an upcoming obstruction?
+Answer: No, the ego vehicle can stay on its current lane.
+con_up: [[6, 0]]
+con_down: [[3, 9]]
+Parent context: 1 nodes; tasks={'prediction': 1}; all graph neighbors=2
+  [1] 3:9 direction= task=prediction layer=5
+      Q: In which direction is the ego car allowed to change lanes?
+      A: The ego vehicle can not change lanes since it is on a one lane road.

@@ -19,6 +19,7 @@ def main() -> None:
 
     frames = {row["frame_json"] for row in rows}
     routes = {row["route_group"] for row in rows}
+    parent_sizes = [len(row.get("parent_context", [])) for row in rows]
     linked_sizes = [len(row.get("linked_context", [])) for row in rows]
     upstream_sizes = [len(row.get("upstream_context", [])) for row in rows]
     downstream_sizes = [len(row.get("con_down", [])) for row in rows]
@@ -29,9 +30,11 @@ def main() -> None:
     print(f"Planning examples: {len(rows)}")
     print(f"Unique frames: {len(frames)}")
     print(f"Route groups: {len(routes)}")
-    print(f"Examples with linked context: {sum(size > 0 for size in linked_sizes)}")
-    print(f"Mean linked nodes: {sum(linked_sizes) / len(linked_sizes):.2f}")
-    print(f"Maximum linked nodes: {max(linked_sizes, default=0)}")
+    print(f"Examples with parent context: {sum(size > 0 for size in parent_sizes)}")
+    print(f"Mean parent nodes: {sum(parent_sizes) / len(parent_sizes):.2f}")
+    print(f"Maximum parent nodes: {max(parent_sizes, default=0)}")
+    print(f"Examples with all linked context: {sum(size > 0 for size in linked_sizes)}")
+    print(f"Mean all-linked nodes: {sum(linked_sizes) / len(linked_sizes):.2f}")
     print(f"Examples with con_up links: {sum(size > 0 for size in upstream_sizes)}")
     print(f"Examples with con_down links: {sum(size > 0 for size in downstream_sizes)}")
     print(f"Missing images: {len(missing_images)}")

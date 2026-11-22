@@ -164,6 +164,12 @@ def main() -> None:
                     "answer": node["answer"],
                     "con_up": node["con_up"],
                     "con_down": node["con_down"],
+                    # For a planning target, DriveLM's graph prompt uses the
+                    # preceding/parent QA nodes.  In the CARLA serialization,
+                    # these are the node references stored in con_down.
+                    "parent_context": resolve_context(node["con_down"], by_cluster),
+                    # Keep the bidirectional neighborhood for diagnostics,
+                    # but do not use it as the training context.
                     "linked_context": resolve_linked_context(node, by_cluster),
                     # Retained for compatibility with the first pilot
                     # manifests.  New experiments should use linked_context.
