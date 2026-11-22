@@ -1,0 +1,128 @@
+
+[1] brake delta=-0.352
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route14_Rep1/0105.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: There is no reason for the ego vehicle to brake.
+Image-only (0.625): The ego vehicle should slow down and stop at the stop sign. There is no reason for the ego vehicle to brake.
+Gold context (0.273): The ego vehicle should slow down and stop at the stop sign.
+
+[2] brake delta=-0.352
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route25_Rep0/0144.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: There is no reason for the ego vehicle to brake.
+Image-only (0.625): The ego vehicle should slow down and stop at the stop sign. There is no reason for the ego vehicle to brake.
+Gold context (0.273): The ego vehicle should slow down and stop at the stop sign.
+
+[3] brake delta=-0.352
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route23_Rep0/0030.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: There is no reason for the ego vehicle to brake.
+Image-only (0.625): The ego vehicle should slow down and stop at the stop sign. There is no reason for the ego vehicle to brake.
+Gold context (0.273): The ego vehicle should slow down and stop at the stop sign.
+
+[4] brake delta=-0.069
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route13_Rep0/0158.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: The ego vehicle should adjust its speed to the speed of the black car that is to the front of it.
+Image-only (0.372): The ego vehicle should slow down and stop at the stop sign. There is no reason for the ego vehicle to brake.
+Gold context (0.303): The ego vehicle should slow down and stop at the stop sign.
+
+[5] brake delta=-0.055
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route25_Rep0/0044.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: The ego vehicle should stop because it must invade the opposite lane, which is occupied, in order to bypass the accident.
+Image-only (0.419): The ego vehicle should slow down and stop at the stop sign. There is no reason for the ego vehicle to brake.
+Gold context (0.364): The ego vehicle should slow down and stop at the stop sign.
+
+[6] brake delta=-0.045
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route13_Rep1/0115.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: The ego vehicle should stop because of the black car that is to the front left.
+Image-only (0.474): The ego vehicle should slow down and stop at the stop sign. There is no reason for the ego vehicle to brake.
+Gold context (0.429): The ego vehicle should slow down and stop at the stop sign.
+
+[7] brake delta=+0.000
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route3_Rep0/0021.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: There is no reason for the ego vehicle to brake.
+Image-only (0.273): The ego vehicle should slow down and stop at the stop sign.
+Gold context (0.273): The ego vehicle should slow down and stop at the stop sign.
+
+[8] brake delta=+0.000
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route3_Rep0/0084.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: There is no reason for the ego vehicle to brake.
+Image-only (0.273): The ego vehicle should slow down and stop at the stop sign.
+Gold context (0.273): The ego vehicle should slow down and stop at the stop sign.
+
+[9] brake delta=+0.000
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route18_Rep1/0116.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: There is no reason for the ego vehicle to brake.
+Image-only (0.273): The ego vehicle should slow down and stop at the stop sign.
+Gold context (0.273): The ego vehicle should slow down and stop at the stop sign.
+
+[10] brake delta=+0.000
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route14_Rep1/0107.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: There is no reason for the ego vehicle to brake.
+Image-only (0.273): The ego vehicle should slow down and stop at the stop sign.
+Gold context (0.273): The ego vehicle should slow down and stop at the stop sign.
+
+[11] brake delta=+0.000
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route13_Rep1/0011.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: There is no reason for the ego vehicle to brake.
+Image-only (0.273): The ego vehicle should slow down and stop at the stop sign.
+Gold context (0.273): The ego vehicle should slow down and stop at the stop sign.
+
+[12] brake delta=+0.000
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route13_Rep1/0036.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: The ego vehicle should stop because it must invade the opposite lane, which is occupied, in order to bypass the accident.
+Image-only (0.364): The ego vehicle should slow down and stop at the stop sign.
+Gold context (0.364): The ego vehicle should slow down and stop at the stop sign.
+
+[13] brake delta=+0.000
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route3_Rep0/0043.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: The ego vehicle should stop because it must invade the opposite lane, which is occupied, in order to bypass the accident.
+Image-only (0.364): The ego vehicle should slow down and stop at the stop sign.
+Gold context (0.364): The ego vehicle should slow down and stop at the stop sign.
+
+[14] brake delta=+0.000
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route14_Rep0/0146.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: The ego vehicle should brake because of the black car that is to the front of it.
+Image-only (0.345): The ego vehicle should slow down and stop at the stop sign.
+Gold context (0.345): The ego vehicle should slow down and stop at the stop sign.
+
+[15] brake delta=+0.000
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route18_Rep0/0155.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: The ego vehicle should adjust its speed to the speed of the orange car that is to the front of it.
+Image-only (0.303): The ego vehicle should slow down and stop at the stop sign.
+Gold context (0.303): The ego vehicle should slow down and stop at the stop sign.
+
+[16] brake delta=+0.000
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route18_Rep1/0014.json
+Node: 6:0
+Question: Does the ego vehicle need to brake? Why?
+Reference: The ego vehicle should adjust its speed to the speed of the gray car that is to the front of it.
+Image-only (0.303): The ego vehicle should slow down and stop at the stop sign.
+Gold context (0.303): The ego vehicle should slow down and stop at the stop sign.

@@ -1,0 +1,144 @@
+
+[1] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route13_Rep1/0025.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[2] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route3_Rep1/0078.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[3] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route14_Rep1/0019.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[4] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route23_Rep0/0153.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[5] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route25_Rep0/0026.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[6] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route18_Rep1/0114.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[7] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route9_Rep0/0195.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[8] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route9_Rep0/0011.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[9] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route18_Rep0/0134.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[10] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route13_Rep1/0016.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[11] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route18_Rep1/0023.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[12] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route9_Rep1/0020.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[13] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route18_Rep0/0139.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[14] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route23_Rep0/0035.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[15] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route9_Rep1/0116.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[16] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route18_Rep0/0152.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[17] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route9_Rep0/0022.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
+
+[18] stop_sign delta=+0.600
+Frame: data/carla/drivelm_carla_vqas/Town13/AccidentTwoWays/Route14_Rep0/0150.json
+Node: 1:1
+Question: What should the ego vehicle do based on the stop sign?
+Reference: There is no stop sign affecting the ego vehicle.
+Image-only (0.400): The ego vehicle should remain stopped.
+Gold context (1.000): There is no stop sign affecting the ego vehicle.
