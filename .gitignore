@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Large datasets and generated model artifacts
+data/
+checkpoints/
+models/
+*.zip
+*.tar
+*.tar.gz
+
+# Local caches and experiment outputs
+.cache/
+reports/*.jsonl
+reports/*.json
+reports/*.png
