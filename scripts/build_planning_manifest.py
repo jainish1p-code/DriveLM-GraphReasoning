@@ -22,6 +22,22 @@ def references(value):
     return [tuple(ref) for ref in value]
 
 
+def linked_references(node):
+    """Return the unique graph neighbors in the official link order.
+
+    DriveLM stores links in two directions.  Some planning nodes, such as
+    braking, have no ``con_up`` links but do have supporting ``con_down``
+    links, so using only one direction silently drops graph evidence.
+    """
+    refs = []
+    seen = set()
+    for ref in node["con_up"] + node["con_down"]:
+        if ref not in seen:
+            refs.append(ref)
+            seen.add(ref)
+    return refs
+
+
 def resolve_image(image_ref: str, image_root: Path) -> Path:
     parts = Path(image_ref).parts
     if "data" in parts:
@@ -72,6 +88,27 @@ def resolve_context(refs, by_cluster):
                     "layer": node["layer"],
                 }
             )
+    return context
+
+
+def resolve_linked_context(node, by_cluster):
+    """Resolve both graph directions and retain how each link was reached."""
+    directions = defaultdict(list)
+    for direction, refs in (
+        ("up", node["con_up"]),
+        ("down", node["con_down"]),
+    ):
+        for ref in refs:
+            directions[ref].append(direction)
+
+    context = []
+    for ref in linked_references(node):
+        resolved = resolve_context([ref], by_cluster)
+        if not resolved:
+            continue
+        item = resolved[0]
+        item["link_directions"] = directions[ref]
+        context.append(item)
     return context
 
 
@@ -127,6 +164,9 @@ def main() -> None:
                     "answer": node["answer"],
                     "con_up": node["con_up"],
                     "con_down": node["con_down"],
+                    "linked_context": resolve_linked_context(node, by_cluster),
+                    # Retained for compatibility with the first pilot
+                    # manifests.  New experiments should use linked_context.
                     "upstream_context": resolve_context(node["con_up"], by_cluster),
                 }
                 manifests[split_name].append(row)
