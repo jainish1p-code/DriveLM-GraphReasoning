@@ -111,15 +111,15 @@ def frame_image_only(front: Image.Image, row: dict) -> Image.Image:
     return image
 
 
-def frame_graph(graph: Image.Image) -> Image.Image:
+def frame_graph(graph: Image.Image, parent_count: int) -> Image.Image:
     image, draw = new_canvas()
-    header(draw, "3 · Reveal the DriveLM QA graph", "The target planning question has eight parent QA nodes")
+    header(draw, "3 · Reveal the DriveLM QA graph", f"The target planning question has {parent_count} parent QA nodes")
     graph = fit_image(graph, 1280, 650)
     image.paste(graph, ((WIDTH - graph.width) // 2, 125))
     return image
 
 
-def frame_gold(front: Image.Image, row: dict) -> Image.Image:
+def frame_gold(front: Image.Image, row: dict, parent_count: int) -> Image.Image:
     image, draw = new_canvas()
     header(draw, "4 · Planning with gold parent context", "The same image now includes linked perception, prediction, and planning answers")
     scene = fit_image(front, 430, 300)
@@ -128,7 +128,7 @@ def frame_gold(front: Image.Image, row: dict) -> Image.Image:
     draw.text((560, 180), "Graph context", font=FONTS["subtitle"], fill="#166534")
     wrapped(
         draw,
-        "8 parent QA answers: 4 perception, 1 prediction, 3 planning\n\n"
+        f"{parent_count} parent QA answers are available\n\n"
         "The model can use these intermediate answers before responding to the target.",
         (560, 235),
         53,
@@ -185,8 +185,8 @@ def main() -> None:
     frames = [
         frame_scene(front, image_row),
         frame_image_only(front, image_row),
-        frame_graph(graph),
-        frame_gold(front, gold_row),
+        frame_graph(graph, 8),
+        frame_gold(front, gold_row, 8),
         frame_result(image_row, gold_row),
         frame_conclusion(image_row, gold_row),
     ]

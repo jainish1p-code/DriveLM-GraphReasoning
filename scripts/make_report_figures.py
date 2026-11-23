@@ -105,13 +105,13 @@ def draw_graph(target: dict, parents: list[dict], output: Path) -> None:
         "body": get_font(21),
         "heading": get_font(38, bold=True),
     }
-    draw.text((50, 35), "DriveLM graph context for a braking question", font=fonts["heading"], fill="#111827")
+    draw.text((50, 35), "DriveLM graph context for a planning question", font=fonts["heading"], fill="#111827")
 
     target_box = (550, 120, 1250, 330)
     draw_box(
         draw,
         target_box,
-        "TARGET · planning · node 6:0",
+        f"TARGET · {target['task']} · node {target['node_id']}",
         f"Q: {shorten(target['question'], 125)}\nA: {shorten(target['answer'], 155)}",
         "#dbeafe",
         fonts,
