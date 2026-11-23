@@ -38,6 +38,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--gradient-accumulation-steps", type=int, default=4)
     parser.add_argument("--learning-rate", type=float, default=1e-4)
     parser.add_argument("--image-size", type=int, default=448)
+    parser.add_argument("--shuffle", action="store_true")
     parser.add_argument("--seed", type=int, default=42)
     return parser.parse_args()
 
@@ -94,7 +95,7 @@ def main() -> None:
     loader = DataLoader(
         dataset,
         batch_size=1,
-        shuffle=False,
+        shuffle=args.shuffle,
         collate_fn=collator,
         pin_memory=True,
     )
